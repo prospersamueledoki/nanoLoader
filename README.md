@@ -21,7 +21,7 @@ It’s **mobile and desktop friendly**, supports **multiple colors & sizes**, an
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/nanoloader.git
+git clone https://github.com/prospersamueledoki/nanoloader.git
 cd nanoloader
 ````
 
