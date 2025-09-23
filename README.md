@@ -1,6 +1,4 @@
-Here’s a polished **README.md** for your **NanoLoader** project 👇
 
-````markdown
 # NanoLoader 🚀
 
 NanoLoader is a **lightweight CSS & JS library** that gives you a set of smooth, customizable loading animations.  
