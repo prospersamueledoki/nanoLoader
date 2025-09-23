@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>NanoLoader – CSS Loader Library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="NanoLoader is a lightweight CSS + JS loader library with 15+ styles, size options, and color customization.">
+  <meta name="author" content="Prosper Samuel Edoki">
+
+  <link rel="stylesheet" href="nanoLoader.css">
+  <style>
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      color: #00bcd4;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #00bcd4;
+      margin-top: 2rem;
+      border-left: 4px solid #00bcd4;
+      padding-left: 0.5rem;
+    }
+    .loader-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .loader-card {
+      text-align: center;
+      padding: 1rem;
+      background: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    .loader-card code {
+      display: block;
+      background: #2a2a2a;
+      padding: 0.5rem;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: #f1f1f1;
+      text-align: left;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+      color: #aaa;
+    }
+    a { color: #00bcd4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 NanoLoader</h1>
+    <p>A lightweight CSS + JS loader library with <strong>15+ styles</strong>, 
+       <strong>size options</strong>, and <strong>color customization</strong>.</p>
+  </header>
+
+  <main>
+    <h2>⚡ Getting Started</h2>
+    <p>Include the CSS and JS files in your project:</p>
+    <code>&lt;link rel="stylesheet" href="nanoLoader.css"&gt;<br>
+&lt;script src="nanoLoader.js"&gt;&lt;/script&gt;</code>
+
+    <h2>🎨 Loaders Showcase</h2>
+    <div class="loader-grid">
+      <div class="loader-card">
+        <div class="nanoLoader nl-circle"></div>
+        <code>&lt;div class="nanoLoader nl-circle"&gt;&lt;/div&gt;</code>
+      </div>
+      <div class="loader-card">
+        <div class="nanoLoader nl-dual-ring nl-color-blue"></div>
+        <code>&lt;div class="nanoLoader nl-dual-ring nl-color-blue"&gt;&lt;/div&gt;</code>
+      </div>
+      <div class="loader-card">
+        <div class="nanoLoader nl-ripple nl-color-green nl-size-lg"></div>
+        <code>&lt;div class="nanoLoader nl-ripple nl-color-green nl-size-lg"&gt;&lt;/div&gt;</code>
+      </div>
+      <div class="loader-card">
+        <div class="nanoLoader nl-facebook nl-color-red"></div>
+        <code>&lt;div class="nanoLoader nl-facebook nl-color-red"&gt;&lt;/div&gt;</code>
+      </div>
+      <div class="loader-card">
+        <div class="nanoLoader nl-spinner nl-color-orange nl-size-sm"></div>
+        <code>&lt;div class="nanoLoader nl-spinner nl-color-orange nl-size-sm"&gt;&lt;/div&gt;</code>
+      </div>
+      <div class="loader-card">
+        <div id="customLoader" class="nanoLoader nl-pulse nl-color-purple"></div>
+        <code>&lt;div id="customLoader" class="nanoLoader nl-pulse nl-color-purple"&gt;&lt;/div&gt;<br>
+&lt;script&gt;document.getElementById("customLoader").dataset.size = "100px";&lt;/script&gt;</code>
+      </div>
+    </div>
+
+    <h2>⚙️ Customization</h2>
+    <p>You can change loader appearance using:</p>
+    <ul>
+      <li><b>Colors:</b> Add classes like <code>nl-color-red</code>, <code>nl-color-blue</code>, or define your own with <code>style="color:#ff00ff"</code>.</li>
+      <li><b>Sizes:</b> Use <code>nl-size-sm</code>, <code>nl-size-md</code>, <code>nl-size-lg</code>, or define a custom size with JavaScript:
+      <code>document.getElementById("myLoader").dataset.size = "120px";</code></li>
+      <li><b>Dynamic Control:</b> You can show or hide loaders in JS, or update color dynamically:
+      <code>document.getElementById("myLoader").style.color = "cyan";</code></li>
+    </ul>
+
+    <h2>📚 Examples</h2>
+    <p>Example usage in a page where you want a loader while fetching data:</p>
+    <code>&lt;div id="loader" class="nanoLoader nl-ripple nl-color-green"&gt;&lt;/div&gt;<br>
+&lt;script&gt;<br>
+&nbsp;&nbsp;// Show loader<br>
+&nbsp;&nbsp;document.getElementById("loader").style.display = "block";<br>
+&nbsp;&nbsp;// Simulate fetch<br>
+&nbsp;&nbsp;setTimeout(() =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("loader").style.display = "none";<br>
+&nbsp;&nbsp;}, 3000);<br>
+&lt;/script&gt;</code>
+  </main>
+
+  <footer>
+    <p>Developed by <a href="https://splendidedgetechnologies.vercel.app" target="_blank">Splendid Edge Technologies</a></p>
+    <p>Base loader designs from <a href="https://loading.io/css" target="_blank">Loading.io</a></p>
+  </footer>
+
+  <script src="nanoLoader2.js"></script>
+</body>
+</html>
