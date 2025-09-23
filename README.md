@@ -126,8 +126,3 @@ Base Loader Designs from [**Loading.io**](https://loading.io/css)
 MIT License – feel free to use it in personal and commercial projects.
 
 ```
-
----
-
-Do you want me to also **add screenshot/GIF placeholders** in the README so it looks more professional on GitHub?
-```
