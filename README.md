@@ -124,5 +124,5 @@ Base Loader Designs from [**Loading.io**](https://loading.io/css)
 ### 📜 License
 
 MIT License – feel free to use it in personal and commercial projects.
-
+Featured on [CSS Script](https://cssscript.com)
 ```
